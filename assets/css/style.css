@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Poppins:wght@200;400;600;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.5s;
+}
+
+:root{
+    --bg-color-top: #009688;
+    --bg-color-bot: #F3EEEA;
+    --bg-color-main: #D6DBD7;
+    --bg-light-blue: #8EDAFC;
+    --subtitle-dark-grey: #4F7485;
+    --bg-header-zapp: #EAEAEA;
+    --color-icons-light: #B1B1B1;
+    --color-icons-darker: #6B7376;
+    --focus-chat: #E9EBEB;
+    --primary-text: #B6B9BB;
+    --secondary-text: #757575;
+    --bg-scroll-bar: #F1F1F1;
+}
+
+body{
+    background-color: var(--bg-color-main);
+}
+
+/* UTILITY */
+
+/* HEADER */
+
+.head{
+    height: 180px;
+    width: 100%;
+    background-color: var(--bg-color-top);
+    position: relative;
+}
+
+/* MAIN */
+
+.wrapper{
+    width: 80vw;
+    height: 95vh;
+    background-color: #15da3c;
+    border: 3px solid black;
+    margin: 0 23vh;
+    position: absolute;
+    top: 1.75rem;
+    left: 0;
+    display: flex;
+}
+
+.container-left{
+    width: 38%;
+    height: 100%;
+    background-color: #8EDAFC;
+}
+
+.container-right{
+    width: 62%;
+    height: 100%;
+    background-color: #08445f;
+}
