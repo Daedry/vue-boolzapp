@@ -13,135 +13,135 @@
 </head>
 
 <body>
-<div id="app"></div>
-    <header id="site_header">
-        <div class="head"></div>
-    </header>
-    <!-- /#site_header -->
+   <div id="app">
+        <header id="site_header">
+            <div class="head"></div>
+        </header>
+        <!-- /#site_header -->
 
-    
-      <main id="site_main" >
-        <div class="wrapper d-flex">
-            <div class="container-left">
+        
+        <main id="site_main" >
+            <div class="wrapper d-flex">
+                <div class="container-left">
 
-                <div class="profile d-flex"">
-                    <div class="my-info d-flex">
-                        <div class="img-profile">
-                            <img src="./assets/img/avatar_io.jpg" alt="">
+                    <div class="profile d-flex"">
+                        <div class="my-info d-flex">
+                            <div class="img-profile">
+                                <img src="./assets/img/avatar_io.jpg" alt="">
+                            </div>
+                            <div class="name-profile">
+                                Sofia
+                            </div> 
+                            
                         </div>
-                        <div class="name-profile">
-                            Sofia
-                        </div> 
-                        
-                    </div>
-                    <div class="utility-icons ">
-                        <i class="fa-solid fa-circle-notch"></i>
-                        <i class="fa-solid fa-message"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
-                    </div>
-                </div>
-                <!-- /.profile -->
-
-                <div class="enable-desk-notice d-flex"">
-                    <div class=" bell d-flex"">
-                        <i class="fa-solid fa-bell-slash"></i>
-                    </div>
-                    <div class="bell-text">
-                        <h4 class="fw-500">Ricevi notifiche di nuovi messaggi</h4>
-                        <p>Attiva notifiche desktop</p>
-                    </div>
-                </div>
-                <!-- /.enable-desktop-notifications -->
-
-                <div class="search-chat d-flex">
-                    <div class="lens d-flex">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                    <div class="find-chat">
-                        <input class="inp-text" type="text"  placeholder="     Cerca o inizia una nuova chat">
-                    </div>
-                </div>
-                <!-- /.search-chat -->
-
-                <div class="chat-users" v-for="(user index) in conctats">
-                    <div class="chat-user d-flex">
-                        <div class="img-user">
-                            <img src="./assets/img/avatar_2.jpg" alt="">
-                        </div>
-                        <div class="text-user">
-                            <h5 class="fw-500"></h5>
-                            <p>ultimo messaggio inviato</p>
-                            <span @onclick="ciao">12:00</span>
-                        </div>
-                   </div>
-                </div>
-                <!-- /.user-chat -->
-
-            </div>
-            <!-- /.container-left -->
-
-            <div class="container-right">
-
-                <div class="current-chat d-flex">
-                    <div class="about-user d-flex">
-                        <div class="image-current-chat">
-                            <img src="./assets/img/avatar_2.jpg" alt="">
-                        </div>
-                        <div class="info-user">
-                            <h4 class="fw-500">Michele</h4>
-                            <p>Ultimo accesso alle 12:00</p>
+                        <div class="utility-icons ">
+                            <i class="fa-solid fa-circle-notch"></i>
+                            <i class="fa-solid fa-message"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <!-- /.about-user -->
+                    <!-- /.profile -->
 
-                    <div class="utility-icons p-icons">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                        <i class="fa-solid fa-paperclip"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    <div class="enable-desk-notice d-flex"">
+                        <div class=" bell d-flex"">
+                            <i class="fa-solid fa-bell-slash"></i>
+                        </div>
+                        <div class="bell-text">
+                            <h4 class="fw-500">Ricevi notifiche di nuovi messaggi</h4>
+                            <p>Attiva notifiche desktop</p>
+                        </div>
                     </div>
-                    <!-- /.utility-icons -->
+                    <!-- /.enable-desktop-notifications -->
+
+                    <div class="search-chat d-flex">
+                        <div class="lens d-flex">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <div class="find-chat">
+                            <input class="inp-text" type="text"  placeholder="     Cerca o inizia una nuova chat">
+                        </div>
+                    </div>
+                    <!-- /.search-chat -->
+
+                    <div class="chat-users" v-for="(user index) in conctats">
+                        <div class="chat-user d-flex">
+                            <div class="img-user">
+                                <img src="./assets/img/avatar_2.jpg" alt="">
+                            </div>
+                            <div class="text-user">
+                                <h5 class="fw-500">{{lol}}</h5>
+                                <p>ultimo messaggio inviato</p>
+                                <span @onclick="ciao">12:00</span>
+                            </div>
+                    </div>
+                    </div>
+                    <!-- /.user-chat -->
+
                 </div>
-                <!-- /.current-chat -->
+                <!-- /.container-left -->
 
-                <div class="chat-area">
+                <div class="container-right">
 
-                    <div class="container-message-area">
-                        <div class="message-area">
+                    <div class="current-chat d-flex">
+                        <div class="about-user d-flex">
+                            <div class="image-current-chat">
+                                <img src="./assets/img/avatar_2.jpg" alt="">
+                            </div>
+                            <div class="info-user">
+                                <h4 class="fw-500">Michele</h4>
+                                <p>Ultimo accesso alle 12:00</p>
+                            </div>
+                        </div>
+                        <!-- /.about-user -->
 
-                            <div class="user-message">
-                                <div class="receive-message d-flex">
-                                    <p>yo, bro come stai?</p>
+                        <div class="utility-icons p-icons">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-paperclip"></i>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                        <!-- /.utility-icons -->
+                    </div>
+                    <!-- /.current-chat -->
+
+                    <div class="chat-area">
+
+                        <div class="container-message-area">
+                            <div class="message-area">
+
+                                <div class="user-message">
+                                    <div class="receive-message d-flex">
+                                        <p>yo, bro come stai?</p>
+                                        <span>12:00</span>
+                                    </div>
+                                    <div class="send-message d-flex">
+                                    <p>tutto bene bro</p> 
                                     <span>12:00</span>
-                                </div>
-                                <div class="send-message d-flex">
-                                   <p>tutto bene bro</p> 
-                                   <span>12:00</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <!-- /.message-area -->
+                        <!-- /.message-area -->
 
-                    <div class="write-text-area d-flex">
-                        <div class="emoji">
-                            <i class="fa-regular fa-face-smile"></i>
+                        <div class="write-text-area d-flex">
+                            <div class="emoji">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                            <input type="text" placeholder="    scrivi un messaggio">
+                            <div class="vocal-message">
+                                <i class="fa-solid fa-microphone"></i>
+                            </div>
                         </div>
-                        <input type="text" placeholder="    scrivi un messaggio">
-                        <div class="vocal-message">
-                            <i class="fa-solid fa-microphone"></i>
-                        </div>
+                        <!-- /.write-text-area -->
                     </div>
-                    <!-- /.write-text-area -->
+                    <!-- /.chat-area -->
+
+
                 </div>
-                <!-- /.chat-area -->
-
-
+                <!-- /.container-right -->
+                
             </div>
-            <!-- /.container-right -->
-            
-        </div>
-      </main>
-      <!-- /#site_main -->
+        </main>
+        <!-- /#site_main -->
    </div>
 
 
