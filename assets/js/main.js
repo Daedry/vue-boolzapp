@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#app',
     data:{
-        active:0,
+        active: 0,
         contacts: [
             {
                 name: 'Michele',
@@ -167,8 +167,10 @@ const app = new Vue({
         ]
     },
     methods: {
-        ciao(){
-            console.log('ciao')
+        selected_chat(i){
+            console.log('hai selezionato la chat:', i);
+            this.active = i;
+            console.log('active:', this.active)
         }
     }
 }) 

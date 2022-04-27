@@ -183,9 +183,16 @@ img{
 }
 
 .chat-user{
+    padding: 0.13rem;
     position: relative;
-
+    border-bottom: 1px solid #f6f6f6;
+    cursor: pointer;
 }
+/* 
+.chat-user:hover{
+    background-color: #f6f6f6;
+    cursor: pointer;
+} */
 
 .img-user > img{
     width: 3rem;
@@ -269,8 +276,8 @@ img{
     margin: 5% auto;
 }
 
-.receive-message,
-.send-message{
+.received-message,
+.sent-message{
     width: 280px;
     flex-direction: column;
     padding: 0.5rem 0.75rem;
@@ -279,26 +286,25 @@ img{
     margin: 0.75rem 0;
 }
 
-.receive-message{
+.received-message{
     text-align: left;
     background-color: #fff;
 }
 
-.receive-message > span,
-.send-message > span{
+.received-message > span,
+.sent-message > span{
     display: flex;
     justify-content: end;
     font-size: 9px;
 }
 
-.send-message{
-    text-align: right;
+.sent-message{
     background-color: var(--send-message);
     position: relative;
     right: -21rem;
 }
 
-.send-message > p{
+.sent-message > p{
     text-align: left;
 }
 
@@ -330,6 +336,10 @@ img{
 
 .vocal-message > i{
     margin: 0.6rem -1.75rem 0  1.5rem;
+}
+
+.active{
+    background-color: #e1f2fa;
 }
 
 
