@@ -87,13 +87,13 @@
                 <div class="container-right">
 
                     <div class="current-chat d-flex">
-                        <div class="about-user d-flex" v-for="(contact, index) in contacts" >
+                        <div class="about-user d-flex"  >
                             <div class="image-current-chat">
-                                <img src=" './assets/img/avatar' + contact.avatar + '.jpg' " alt="">
+                                <img :src=" './assets/img/avatar' + contacts[active].avatar + '.jpg' " alt="">
                             </div>
                             <div class="info-user" >
-                                <h4 class="fw-500">{{contact.name}}</h4>
-                                <!-- <p>Ultimo accesso alle 12:00</p> -->
+                                <h4 class="fw-500">{{contacts[active].name}}</h4>
+                                <p>Ultimo accesso alle 12:00</p>
                             </div>
                         </div>
                         <!-- /.about-user -->

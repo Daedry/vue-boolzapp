@@ -168,9 +168,9 @@ const app = new Vue({
     },
     methods: {
         selected_chat(i){
-            console.log('hai selezionato la chat:', i);
             this.active = i;
             console.log('active:', this.active)
+            console.log('hai selezionato la chat:', i);
         }
     }
 }) 
