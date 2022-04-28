@@ -356,9 +356,10 @@ img{
     background-color: #e1f2fa;
 }
 
-.smal{
-    background-color: red;
+.notVisible{
+    display: none;
 }
+
 
 
 

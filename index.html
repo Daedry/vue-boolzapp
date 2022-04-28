@@ -69,7 +69,8 @@
                     <div class="chat-users" >
                         <div class="chat-user d-flex" v-for="(contact, index) in contacts" 
                         :class="index === active ? 'active' : '' "
-                        @click="selected_chat(index)">
+                        @click="selected_chat(index)"
+                        :class="contact.visible == false ? 'notVisible' : '' ">
                             <div class="img-user">
                                 <img :src="'./assets/img/avatar' + contact.avatar + '.jpg' " alt="">
                             </div>

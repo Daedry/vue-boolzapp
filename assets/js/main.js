@@ -199,7 +199,7 @@ const app = new Vue({
       // console.log(this.contacts);
       this.contacts.forEach((contact) => {
         // console.log(contact.visible);
-        if (contact.name.toLowerCase().includes(this.searchUsers.toLowerCase())) {
+        if (contact.name.toLowerCase() === this.searchUsers.toLowerCase()) {
           contact.visible = true;
         } else {
           contact.visible = false;
@@ -208,5 +208,6 @@ const app = new Vue({
         this.searchUsers = '';
       });
     },
+    
   },
 });
