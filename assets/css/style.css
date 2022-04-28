@@ -25,6 +25,20 @@
     --send-message: #D5F9BA;
 }
 
+*::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--bg-color-top);
+    border-radius: 7px;
+    border: 2px inset var(--send-message);
+  }
+
 body{
     background-color: var(--bg-color-main);
 }
@@ -340,6 +354,10 @@ img{
 
 .active{
     background-color: #e1f2fa;
+}
+
+.smal{
+    background-color: red;
 }
 
 

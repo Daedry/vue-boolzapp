@@ -1,6 +1,7 @@
 const app = new Vue({
   el: "#app",
   data: {
+    searchUsers: "",
     inputValue: "",
     active: 0,
     contacts: [
@@ -182,16 +183,30 @@ const app = new Vue({
         status: "sent",
       };
       this.contacts[this.active].messages.push(newMessage);
-      input = '';
+      (this.inputValue = ""),
+        setTimeout(() => {
+          const message = {
+            date: "16:00:00",
+            message: "Ok",
+            status: "received",
+          };
+          this.contacts[this.active].messages.push(message);
+        }, 3000);
+    },
 
-      setTimeout(() => {
-        const message = {
-          date: "16:00:00",
-          message: "Ok",
-          status: "received",
-        };
-        this.contacts[this.active].messages.push(message);
-      }, 1000);
+    filterUsers() {
+      console.log("filter", this.searchUsers);
+      // console.log(this.contacts);
+      this.contacts.forEach((contact) => {
+        // console.log(contact.visible);
+        if (contact.name.toLowerCase().includes(this.searchUsers.toLowerCase())) {
+          contact.visible = true;
+        } else {
+          contact.visible = false;
+        }
+        console.log(contact.visible);
+        this.searchUsers = '';
+      });
     },
   },
 });

@@ -57,10 +57,11 @@
 
                     <div class="search-chat d-flex">
                         <div class="lens d-flex">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass" @click="filterUsers"></i>
                         </div>
                         <div class="find-chat">
-                            <input class="inp-text" type="text"  placeholder="     Cerca o inizia una nuova chat">
+                            <input class="inp-text" type="text" placeholder="  Cerca o inizia una nuova chat"
+                            v-model="searchUsers" @keyup.enter="filterUsers" >
                         </div>
                     </div>
                     <!-- /.search-chat -->
