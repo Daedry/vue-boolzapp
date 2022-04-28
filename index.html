@@ -57,11 +57,11 @@
 
                     <div class="search-chat d-flex">
                         <div class="lens d-flex">
-                            <i class="fa-solid fa-magnifying-glass" @click="filterUsers"></i>
+                            <i class="fa-solid fa-magnifying-glass" ></i>
                         </div>
                         <div class="find-chat">
                             <input class="inp-text" type="text" placeholder="  Cerca o inizia una nuova chat"
-                            v-model="searchUsers" @keyup.enter="filterUsers" >
+                            v-model="searchUsers" @keyup="filterUsers" >
                         </div>
                     </div>
                     <!-- /.search-chat -->
@@ -70,7 +70,7 @@
                         <div class="chat-user d-flex" v-for="(contact, index) in contacts" 
                         :class="index === active ? 'active' : '' "
                         @click="selected_chat(index)"
-                        :class="contact.visible === false ? 'notVisible' : '' ">
+                        v-if="contact.visible">
                             <div class="img-user">
                                 <img :src="'./assets/img/avatar' + contact.avatar + '.jpg' " alt="">
                             </div>

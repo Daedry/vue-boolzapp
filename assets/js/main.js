@@ -197,16 +197,18 @@ const app = new Vue({
     filterUsers() {
       console.log("filter", this.searchUsers);
       // console.log(this.contacts);
+      
       this.contacts.forEach((contact) => {
         // console.log(contact.visible);
-        if (contact.name.toLowerCase() === this.searchUsers.toLowerCase()) {
+        
+        if (contact.name.toLowerCase().includes(this.searchUsers.toLowerCase())) {
           contact.visible = true;
         } else {
           contact.visible = false;
         }
         console.log(contact.visible);
-        this.searchUsers = '';
-        
+        // this.searchUsers = '';
+
       });
     },
     
