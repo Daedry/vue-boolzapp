@@ -206,6 +206,7 @@ const app = new Vue({
         }
         console.log(contact.visible);
         this.searchUsers = '';
+        
       });
     },
     
